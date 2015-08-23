@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link href="mvc.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="nav.js" type="text/javascript"></script>
+</head>
+  <body>
+    <div class='main'>
+      <h2>Controller</h2>
+      <div class='good'>
+        <h3>Can:</h3>
+        <ul>
+          <li>this.model.method(); //call public model inteface</li>
+          <li>Ember.set(model, 'property', value); //change model property</li>
+          <li>this.view.method(); //ask view to do something</li>
+          <li>this.view.on('ELEMENT.CHOSEN', function() {...// listen for view events</li>
+          <li>this.model.on('PROPERTY.CHANGED', function() {...//listen for model events</li>
+          <li>this.model.reloadFromServer.done( function(data) {...//listen for model async events</li>
+          <li>watchProperty : function() {...}.observes('model.property');//observes model property</li>
+        </ul>
+      </div>
+      <div class='bad'>
+        <h3>Cannot:</h3>
+        <ul>
+          <li>$('.property').hide(); //manipulate DOM directly</li>
+          <li>this.view.$property.hide(); //manipulate DOM using view internals</li>
+          <li>this.model.property += 1; //change model bypassing model interface</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

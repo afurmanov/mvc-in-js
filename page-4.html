@@ -1,0 +1,30 @@
+<html>
+<head>
+  <link href="mvc.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="nav.js" type="text/javascript"></script>
+</head>
+  <body>
+    <div class='main'>
+      <h2>View</h2>
+      <div class='good'>
+        <h3>Can:</h3>
+        <ul>
+          <li>this.model.getProperty(); //reading model properties</li>
+          <li>$('.element').hide(); //rendering</li>
+          <li>$('.element').on('click', ... //listen for user input
+          <li>NB.EventHub.emit('BUTTON.CLICKED', function() {... //emitting events</li>
+          <li>function() {...}.observes(model, 'property'); //listen for model property changes
+        </ul>
+      </div>
+      <div class='bad'>
+        <h3>Cannot:</h3>
+        <ul>
+          <li>this.model.updateProperty(); //update model</li>
+          <li>Ember.set(model, 'property', value); //update model</li>
+          <li>controller.method() //use controller directly</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

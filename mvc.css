@@ -1,0 +1,51 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: #8a8;
+}
+
+
+.main {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    margin: auto;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    vertical-align: center;
+    font-family: monospace;
+}
+
+.good ul {
+    background: #050;
+}
+
+.bad ul {
+    background: #500;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 48px;
+    text-align: left;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type:none;
+    text-align: left;
+}
+
+ul li {
+    line-height: 2em;
+}
